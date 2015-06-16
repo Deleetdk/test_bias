@@ -53,7 +53,8 @@ shinyUI(fluidPage(
            "<p>Set the validity for red to 0 and the intercept bias to 33 (or click the checkbox below). You see a scenario where test scores have no relationship at all to the criteria for red, but that the groups actually perform the same on the criteria.</p>",
            "<p>Try playing around with the sliders to get an idea of how test bias works.</p>"),
       plotOutput("plot"),
-      DT::dataTableOutput("DT")
+      DT::dataTableOutput("DT"),
+      HTML("Made by <a href='http://emilkirkegaard.dk'>Emil O. W. Kirkegaard</a> using <a href='http://shiny.rstudio.com/'/>Shiny</a> for <a href='http://en.wikipedia.org/wiki/R_%28programming_language%29'>R</a>. Source code available on <a href='https://github.com/Deleetdk/test_bias'>Github</a>.")
     )
   )
 ))
