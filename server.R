@@ -10,6 +10,8 @@ library(ggplot2)
 library(MASS)
 library(stringr)
 
+theme_set(theme_bw())
+
 #helper function
 get_error_beta = function(cor) {
   #proportion of variance of predictor
